@@ -37,13 +37,18 @@
     --greytrans: #eeea;
   }
 
+  @font-face {
+    font-family: batmfa;
+    src: url("batmfa.ttf");
+  }
+
   /* BACKGROUND */
 
   #wrapper {
     background-color: var(--light2);
     color: var(--dark1);
     margin: 0;
-    font-family: BatmanForeverAlternate;
+    font-family: batmfa;
 
     min-height: 100vh;
   }
