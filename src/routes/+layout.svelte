@@ -2,6 +2,8 @@
   import Nav from './Nav.svelte'
   import Topbar from './Topbar.svelte'
   import Background from './Background.svelte'
+
+  export const prerender = true;
 </script>
 
 <div id="wrapper">

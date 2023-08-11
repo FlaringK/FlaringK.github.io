@@ -77,22 +77,6 @@
     z-index: -10;
   }
 
-  .star {
-    top: 15vh;
-    animation: windowMove linear 130s infinite 10s reverse;
-    scale: 0.35;
-  }
-  .star2 {
-    top: 25vh;
-    animation: windowMove linear 145s infinite 0s;
-    scale: 0.5;
-  }
-  .star3 {
-    top: 40vh;
-    animation: windowMove linear 135s infinite reverse 20s;
-    scale: 0.30;
-  }
-
   .moon {
     top: 5vh;
     right: 10vh;
