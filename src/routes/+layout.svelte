@@ -19,10 +19,6 @@
   </div>
 </div>
 
-<svelte:head>
-  <title>FlaringK</title>
-</svelte:head>
-
 
 <style>
   :root {
@@ -39,7 +35,7 @@
 
   @font-face {
     font-family: batmfa;
-    src: url("batmfa.ttf");
+    src: url("https://file.garden/X1htvgJ0DEp_tp-Z/batmfa.ttf");
   }
 
   /* BACKGROUND */
@@ -48,7 +44,7 @@
     background-color: var(--light2);
     color: var(--dark1);
     margin: 0;
-    font-family: batmfa;
+    font-family: batmfa, 'Courier New', Courier, monospace;
 
     min-height: 100vh;
   }

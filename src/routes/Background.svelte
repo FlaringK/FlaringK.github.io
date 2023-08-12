@@ -2,21 +2,15 @@
 // @ts-nocheck
 
   import Window from './Window.svelte'
+
+  let scroll = true
 </script>
 
-<div id="background">
+<div id="background" class="{scroll ? "" : "noscroll"}">
 
   <div class="moon">
     <Window title="moon.png">
-      <div class="ascii">
-   _.._
- .' .-'`
-/  /
-|  |
-\  \
- '._'-._
-    ```
-      </div>
+      <img src="./favicon.png" alt="">
     </Window>
   </div>
 
@@ -45,7 +39,31 @@
 
 </div>
 
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<div id="settings">
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <div id="scrollBtn" on:click={() => { scroll = scroll ? false : true }}>
+    Scrolling: { scroll ? "On" : "Off" }
+  </div>
+</div>
+
 <style>
+
+  #settings {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    opacity: 0.5;
+    transition: opacity 0.1s;
+  }
+
+  #settings:hover {
+    opacity: 1;
+  }
+
+  #scrollBtn {
+    cursor: pointer;
+  }
 
   #background {
     position: fixed;
@@ -58,6 +76,10 @@
     animation: backgroundMove linear 5s infinite;
 
     pointer-events: none;
+  }
+
+  #background.noscroll {
+    animation: none;
   }
 
   @keyframes backgroundMove {
