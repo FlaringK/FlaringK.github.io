@@ -1,5 +1,7 @@
 <script>
   import { page } from '$app/stores';
+  import { goto } from '$app/navigation';
+  import { onMount } from 'svelte';
 
   let pages = [
     { route: "/", name: "Home" },
@@ -13,6 +15,13 @@
   $: pagePath = $page.url.pathname
 
   let menuOpen = false
+
+  onMount(() => { 
+    let p = $page.url.searchParams.get("p")
+    if (p) {
+      goto("/" + p)
+    }
+  })
   
 </script>
 
