@@ -18,10 +18,10 @@
       icon: "webIcons/hs5plus.png",
     },
     {
-      title: "Hades: MEGIDO",
-      description: "A crossover mod for SGG's Hades, featuring characters from Homestuck.",
-      link: "https://www.nexusmods.com/hades/mods/152",
-      icon: "webIcons/megido.png",
+      title: "Pesterquest Rewritten",
+      description: "A fanmade rewrite of Homestuck - Pesterquest! <a href='https://etchjetty.github.io/'>Written by Etch Jetty</a>",
+      link: "https://hjtfir.itch.io/pesterquest-rewritten",
+      icon: "webIcons/pqr.png",
     },
     {
       title: "Flare's CSS textboxes",
@@ -46,6 +46,12 @@
       description: "A tool to make it easy to create and save the text transfroms you do every day",
       link: "https://flaringk.github.io/betterfindreplace/",
       icon: "webIcons/bfr.ico",
+    },
+    {
+      title: "Hades: MEGIDO",
+      description: "A crossover mod for SGG's Hades, featuring characters from Homestuck.",
+      link: "https://www.nexusmods.com/hades/mods/152",
+      icon: "webIcons/megido.png",
     },
     {
       title: "JARI: Grimdorks",
