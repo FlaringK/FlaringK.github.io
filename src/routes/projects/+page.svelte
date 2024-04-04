@@ -6,6 +6,12 @@
 
   let projects = [
     {
+      title: "CHORDIOID",
+      description: "A rhythm RPG where you battle to the beat. CHORDIOID is a unique musical JRPG that seamlessly blends turn-based combat with rhythm game mechanics.",
+      link: "https://chordioid.com/",
+      icon: "webIcons/cd.png",
+    },
+    {
       title: "SAHCon.com",
       description: "The landing page for the Stuck At Home Convention, a virtual homestuck convention held in VR and across the internet.",
       link: "https://sahcon.com/",
@@ -46,6 +52,12 @@
       description: "A tool to make it easy to create and save the text transfroms you do every day",
       link: "https://flaringk.github.io/betterfindreplace/",
       icon: "webIcons/bfr.ico",
+    },
+    {
+      title: "Grist Torrent+",
+      description: "A Homestuck Suika Game",
+      link: "https://flaringk.itch.io/grist-torrent",
+      icon: "webIcons/BUILD.png",
     },
     {
       title: "Hades: MEGIDO",
