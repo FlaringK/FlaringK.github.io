@@ -59,6 +59,20 @@
       link: "https://flaringk.itch.io/grist-torrent",
       icon: "webIcons/BUILD.png",
     },
+    
+    {
+      title: "Quadrant Maker",
+      description: "A Gif generator for all your shipping needs.",
+      link: "https://flaringk.github.io/quadrantmaker/",
+      icon: "https://flaringk.github.io/quadrantmaker/assets/favicon.png",
+    },
+    {
+      title: "Gifstuck",
+      description: "A Gif generator for your homestuck adventure!",
+      link: "https://flaringk.github.io/gifstuck/",
+      icon: "https://pipe.miroware.io/5f586dbe02740c4a7fb69f99/Ididart/Icon.png",
+    },
+
     {
       title: "Hades: MEGIDO",
       description: "A crossover mod for SGG's Hades, featuring characters from Homestuck.",
