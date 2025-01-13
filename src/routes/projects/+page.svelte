@@ -195,14 +195,14 @@
 
   let currentIndex = -1;
 
-  let updatePreview = index => {
-    currentPoject = projects[index]
-
+  let updatePreview = project => {
     // If double click open in new tab
-    if (currentIndex == index) {
-      window.open(projects[index].link, "_blank");
+    if (project.link == currentPoject.link) {
+      window.open(project.link, "_blank");
     }
-    currentIndex = index
+
+    console.log(currentPoject)
+    currentPoject = project
   }
 </script>
 
@@ -221,7 +221,7 @@
       {#each websites as { title, link, description, icon }, i}
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <!-- svelte-ignore a11y-no-static-element-interactions -->
-        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview(i) }}>
+        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview({ title, link, description, icon }) }}>
           <div class="fileicon">
             <img src="{icon}" alt="{icon}">
           </div>
@@ -238,7 +238,7 @@
       {#each games as { title, link, description, icon }, i}
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <!-- svelte-ignore a11y-no-static-element-interactions -->
-        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview(i) }}>
+        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview({ title, link, description, icon }) }}>
           <div class="fileicon">
             <img src="{icon}" alt="{icon}">
           </div>
@@ -255,7 +255,7 @@
       {#each webtools as { title, link, description, icon }, i}
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <!-- svelte-ignore a11y-no-static-element-interactions -->
-        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview(i) }}>
+        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview({ title, link, description, icon }) }}>
           <div class="fileicon">
             <img src="{icon}" alt="{icon}">
           </div>
@@ -272,7 +272,7 @@
       {#each projects as { title, link, description, icon }, i}
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <!-- svelte-ignore a11y-no-static-element-interactions -->
-        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview(i) }}>
+        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview({ title, link, description, icon }) }}>
           <div class="fileicon">
             <img src="{icon}" alt="{icon}">
           </div>
