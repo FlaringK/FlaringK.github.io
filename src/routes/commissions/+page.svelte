@@ -17,7 +17,7 @@
     <li>Delevoping any sort of custom backend. (No stores, comments sections or email services, though I can recommend some much more user friendly services to connect to your site if you would like.)</li>
     <li>Paying for a custom url domain or host.</li>
   </ul>
-  Prices will fluctuate depending on the complexity of the site, but generally my rate is <b>$48 USD per hour</b>, and I will <b>charge for the first 3 hours up front</b> when starting a project. <br>
+  Prices will fluctuate depending on the complexity of the site, but generally my rate is <b>$38 USD per hour</b>, and I will <b>charge for the first 3 hours up front</b> when starting a project. <br>
   <br>
   You can contact me by emailing <a href="mailto:caelans@iinet.net.au">caelans@iinet.net.au</a>, direct message me on discord at <b>@flaringk</b>, or message me on any of the sites in the <a href="/contact">Contact Me</a> tab.
 </Window>

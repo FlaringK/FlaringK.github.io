@@ -4,13 +4,7 @@
   import Window from '../Window.svelte'
   import Preview from './Preview.svelte'
 
-  let projects = [
-    {
-      title: "CHORDIOID",
-      description: "A rhythm RPG where you battle to the beat. CHORDIOID is a unique musical JRPG that seamlessly blends turn-based combat with rhythm game mechanics.",
-      link: "https://chordioid.com/",
-      icon: "webIcons/cd.png",
-    },
+  let websites = [
     {
       title: "SAHCon.com",
       description: "The landing page for the Stuck At Home Convention, a virtual homestuck convention held in VR and across the internet.",
@@ -18,22 +12,10 @@
       icon: "webIcons/sahcon.png",
     },
     {
-      title: "Homestuck 5 plus",
-      description: "Homestuck 5+ is a tool to format Homestuck style dialogue. Entering homestuck style dialogue in the left text area will generate formatted homestuck dialogue in the right area.",
-      link: "https://flaringk.github.io/homestuck5plus/",
-      icon: "webIcons/hs5plus.png",
-    },
-    {
-      title: "Pesterquest Rewritten",
-      description: "A fanmade rewrite of Homestuck - Pesterquest! <a href='https://etchjetty.github.io/'>Written by Etch Jetty</a>",
-      link: "https://hjtfir.itch.io/pesterquest-rewritten",
-      icon: "webIcons/pqr.png",
-    },
-    {
-      title: "Flare's CSS textboxes",
-      description: "Importable CSS module that creates multiple menus, text-styles and textboxes for use in MSPFA adventures.",
-      link: "https://mspfa.com/?s=41577&p=1",
-      icon: "webIcons/csst.png",
+      title: "CHORDIOID",
+      description: "A rhythm RPG where you battle to the beat. CHORDIOID is a unique musical JRPG that seamlessly blends turn-based combat with rhythm game mechanics.",
+      link: "https://chordioid.com/",
+      icon: "webIcons/cd.png",
     },
     {
       title: "...Perform My Own Tracheotomy.",
@@ -42,10 +24,66 @@
       icon: "webIcons/watchasiperformmyowntracheotomy.png",
     },
     {
+      title: "JARI: Grimdorks",
+      description: "Homestuck fan continuation about a girl way out of her depth <br> <a href='https://twitter.com/Nerd_Zara'>A comic by Zara Nerd</a>",
+      link: "https://grimdorks.net/",
+      icon: "webIcons/jari.png",
+    },
+
+  ]
+
+  let games = [
+    {
+      title: "Pesterquest Rewritten",
+      description: "A fanmade rewrite of Homestuck - Pesterquest! <a href='https://etchjetty.github.io/'>Written by Etch Jetty</a>",
+      link: "https://hjtfir.itch.io/pesterquest-rewritten",
+      icon: "webIcons/pqr.png",
+    },
+    {
+      title: "Grist Torrent+",
+      description: "A Homestuck Suika Game",
+      link: "https://flaringk.itch.io/grist-torrent",
+      icon: "webIcons/BUILD.png",
+    },
+    {
+      title: "Hades: MEGIDO",
+      description: "A crossover mod for SGG's Hades, featuring characters from Homestuck.",
+      link: "https://www.nexusmods.com/hades/mods/152",
+      icon: "webIcons/megido.png",
+    },
+    {
+      title: "Mintendo DS Homescreen",
+      description: "A recreation of the Mintendo DS home screen. Made to just explore CSS and JS.",
+      link: "https://flaringk.github.io/Mintendo-DS/",
+      icon: "webIcons/mds.png",
+    },
+
+  ]
+
+  let webtools = [
+    {
+      title: "Homestuck 5 plus",
+      description: "Homestuck 5+ is a tool to format Homestuck style dialogue. Entering homestuck style dialogue in the left text area will generate formatted homestuck dialogue in the right area.",
+      link: "https://flaringk.github.io/homestuck5plus/",
+      icon: "webIcons/hs5plus.png",
+    },
+    {
+      title: "Flare's CSS textboxes",
+      description: "Importable CSS module that creates multiple menus, text-styles and textboxes for use in MSPFA adventures.",
+      link: "https://mspfa.com/?s=41577&p=1",
+      icon: "webIcons/csst.png",
+    },
+    {
       title: "Homestuck Hex Codes",
       description: "Easy to copy accurate Homestuck hex colours. ",
       link: "https://flaringk.github.io/hs-hexes/",
       icon: "webIcons/hexcodes.png",
+    },
+    {
+      title: "Quirk Builder",
+      description: "A tool to help generate homestuck quirks. ",
+      link: "https://flaringk.github.io/quirkbuilder/",
+      icon: "webIcons/quirkb.png",
     },
     {
       title: "Better Find and Replace",
@@ -54,12 +92,11 @@
       icon: "webIcons/bfr.ico",
     },
     {
-      title: "Grist Torrent+",
-      description: "A Homestuck Suika Game",
-      link: "https://flaringk.itch.io/grist-torrent",
-      icon: "webIcons/BUILD.png",
+      title: "Gif analyser",
+      description: "Analyse all your favourite GIFS with this built in viewer made for viewing an inspecting timings and positions.",
+      link: "https://flaringk.github.io/gifinfo/",
+      icon: "webIcons/uhc.png",
     },
-    
     {
       title: "Quadrant Maker",
       description: "A Gif generator for all your shipping needs.",
@@ -72,30 +109,17 @@
       link: "https://flaringk.github.io/gifstuck/",
       icon: "https://pipe.miroware.io/5f586dbe02740c4a7fb69f99/Ididart/Icon.png",
     },
-
     {
-      title: "Hades: MEGIDO",
-      description: "A crossover mod for SGG's Hades, featuring characters from Homestuck.",
-      link: "https://www.nexusmods.com/hades/mods/152",
-      icon: "webIcons/megido.png",
+      title: "Spriter's Exporter",
+      description: "Turn spritesheets from spriter's resource into useable transparent sprite sheets!",
+      link: "https://flaringk.github.io/spriters-sheet/",
+      icon: "webIcons/spriters.png",
     },
     {
-      title: "JARI: Grimdorks",
-      description: "Homestuck fan continuation about a girl way out of her depth <br> <a href='https://twitter.com/Nerd_Zara'>A comic by Zara Nerd</a>",
-      link: "https://grimdorks.net/",
-      icon: "webIcons/jari.png",
-    },
-    {
-      title: "Quirk Builder",
-      description: "A tool to help generate homestuck quirks. ",
-      link: "https://flaringk.github.io/quirkbuilder/",
-      icon: "webIcons/quirkb.png",
-    },
-    {
-      title: "Classpect Central",
-      description: "A website about Classpects from Homestuck! Made using React JS.",
-      link: "https://flaringk.github.io/classpectcentral/",
-      icon: "webIcons/classpect.png",
+      "title": "Classpect Card Generator",
+      "description": "Generate your own playing cards based off of homestuck classes and aspects.",
+      "link": "https://flaringk.github.io/classpectcards/",
+      icon: "webIcons/classcard.png",
     },
     {
       title: "Homestuck Textbox Generator",
@@ -104,28 +128,10 @@
       icon: "webIcons/htg.png",
     },
     {
-      title: "Spriter's Exporter",
-      description: "Turn spritesheets from spriter's resource into useable transparent sprite sheets!",
-      link: "https://flaringk.github.io/spriters-sheet/",
-      icon: "webIcons/spriters.png",
-    },
-    {
       title: "Gdocs to fiction",
       description: "Format your google docs for fanfiction websites, with homstuck pesterchum auto formatting.",
       link: "https://flaringk.github.io/gdocs-to-fiction/",
       icon: "webIcons/gdoc2f.png",
-    },
-    {
-      title: "Gif analyser",
-      description: "Analyse all your favourite GIFS with this built in viewer made for viewing an inspecting timings and positions.",
-      link: "https://flaringk.github.io/gifinfo/",
-      icon: "webIcons/uhc.png",
-    },
-    {
-      "title": "Classpect Card Generator",
-      "description": "Generate your own playing cards based off of homestuck classes and aspects.",
-      "link": "https://flaringk.github.io/classpectcards/",
-      icon: "webIcons/classcard.png",
     },
     {
       title: "Wizards 101 Name Generator",
@@ -146,11 +152,14 @@
       icon: "webIcons/t2t.gif",
     },
     {
-      title: "Mintendo DS Homescreen",
-      description: "A recreation of the Mintendo DS home screen. Made to just explore CSS and JS.",
-      link: "https://flaringk.github.io/Mintendo-DS/",
-      icon: "webIcons/mds.png",
+      title: "Classpect Central",
+      description: "A website about Classpects from Homestuck! Made using React JS.",
+      link: "https://flaringk.github.io/classpectcentral/",
+      icon: "webIcons/classpect.png",
     },
+  ]
+
+  let projects = [
     {
       title: "mspfaViewer",
       description: "This script was made to let you host your mspfa or original comic on it's own site.",
@@ -202,31 +211,94 @@
 </Window>
 
 <Window title="file_explorer.exe"> 
-  <div id="filewrap">
 
-    {#each projects as { title, link, description, icon }, i}
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <!-- svelte-ignore a11y-no-static-element-interactions -->
-      <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview(i) }}>
-        <div class="fileicon">
-          <img src="{icon}" alt="{icon}">
+  <div class="filewrap">
+
+    <h2 class="sectionHeader">Websites</h2>
+  
+    <div class="filesection">
+  
+      {#each websites as { title, link, description, icon }, i}
+      <!-- svelte-ignore a11y-click-events-have-key-events -->
+      <!-- svelte-ignore a11y-no-static-element-interactions -->
+        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview(i) }}>
+          <div class="fileicon">
+            <img src="{icon}" alt="{icon}">
+          </div>
+          {title}
         </div>
-        {title}
-      </div>
-    {/each}
+      {/each}
+  
+    </div>
+
+    <h2 class="sectionHeader">Games, Game Mods and Applications</h2>
+  
+    <div class="filesection">
+  
+      {#each games as { title, link, description, icon }, i}
+      <!-- svelte-ignore a11y-click-events-have-key-events -->
+      <!-- svelte-ignore a11y-no-static-element-interactions -->
+        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview(i) }}>
+          <div class="fileicon">
+            <img src="{icon}" alt="{icon}">
+          </div>
+          {title}
+        </div>
+      {/each}
+  
+    </div>
+  
+    <h2 class="sectionHeader">Webtools</h2>
+  
+    <div class="filesection">
+  
+      {#each webtools as { title, link, description, icon }, i}
+      <!-- svelte-ignore a11y-click-events-have-key-events -->
+      <!-- svelte-ignore a11y-no-static-element-interactions -->
+        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview(i) }}>
+          <div class="fileicon">
+            <img src="{icon}" alt="{icon}">
+          </div>
+          {title}
+        </div>
+      {/each}
+  
+    </div>
+    
+    <h2 class="sectionHeader">Miscellaneous</h2>
+  
+    <div class="filesection">
+  
+      {#each projects as { title, link, description, icon }, i}
+      <!-- svelte-ignore a11y-click-events-have-key-events -->
+      <!-- svelte-ignore a11y-no-static-element-interactions -->
+        <div class="file {currentIndex == i ? "active" : ""}" on:click={() => { updatePreview(i) }}>
+          <div class="fileicon">
+            <img src="{icon}" alt="{icon}">
+          </div>
+          {title}
+        </div>
+      {/each}
+  
+    </div>
 
   </div>
+
 </Window>
 
 <style>
-  #filewrap {
+  .filesection {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0 30px;
     padding: 10px;
-    max-height: 450px;
-    overflow-y: auto;
     justify-content: space-around;
+  }
+
+  .filewrap {
+    overflow-y: auto;
+    max-height: 450px;
+    padding: 1em 0;
   }
 
   .file {
@@ -270,5 +342,14 @@
     #filewrap {
       width: 75vw;
     }
+  }
+
+  .sectionHeader {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    border-bottom: solid var(--dark1);
   }
 </style>
