@@ -87,9 +87,15 @@
     },
     {
       title: "Better Find and Replace",
-      description: "A tool to make it easy to create and save the text transfroms you do every day",
+      description: "A tool to make it easy to create and save the text transfroms you do every day.",
       link: "https://flaringk.github.io/betterfindreplace/",
       icon: "webIcons/bfr.ico",
+    },
+    {
+      title: "Homestuck Map Generator",
+      description: "A tool to make your own homestuck style map.",
+      link: "https://flaringk.github.io/mspaMapGenerator/",
+      icon: "webIcons/Homestuck_Cascade.png",
     },
     {
       title: "Gif analyser",
